@@ -8,8 +8,13 @@ export default function Dashboard() {
             <nav className="navbar">
                 <ul className="nav-menu">
                     <li><NavLink to="home">Home</NavLink></li>
-                    <li><NavLink to="class-demo">Class Compo</NavLink></li>
-                    <li><NavLink to="func-demo">Functional Compo</NavLink></li>
+                    <li className="dropdown">
+                        <NavLink to="compo-type" className="dropbtn">Compo Types</NavLink>
+                        <div className="dropdown-content">
+                            <NavLink to="compo-type/class-demo">Class Component</NavLink>
+                            <NavLink to="compo-type/func-demo">Functional Component</NavLink>
+                        </div>
+                    </li>
                     <li><NavLink to="lifecycle-demo">LifeCycle Demo</NavLink></li>
                     <li className="dropdown">
                         <NavLink to="hooks" className="dropbtn">Hooks</NavLink>
@@ -31,6 +36,7 @@ export default function Dashboard() {
                     <li><NavLink to="counter">Counter</NavLink></li>
                     <li><NavLink to="map-demo">Map</NavLink></li>
                     <li><NavLink to="spa">SPA</NavLink></li>
+                    <li><NavLink to="to-do-list">ToDo List</NavLink></li>
                     <li><NavLink to="/">Logout</NavLink></li>
                 </ul>
 

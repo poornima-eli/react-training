@@ -61,9 +61,9 @@ export default function Axios() {
   }
 
   return (
-      <div className="container">
+      <div>
         <h1>Axios</h1>
-        <button style={{ margin: '10px', padding: '5px' }} onClick={() => setIsCreateUser(true)}>Create User</button>
+        <button onClick={() => setIsCreateUser(true)}>Create User</button>
         <br/>
         {isCreateUser && <form onSubmit={createUser}>
           <h2>Create User</h2>
@@ -85,14 +85,14 @@ export default function Axios() {
                 <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
               </td>
               <td>
-                <button type="submit">Create User</button>
+                <button type="submit">Save</button>
               </td>
             </tr>
             </tbody>
           </table>
         </form>}
         <table className="table table-bordered">
-          <thead className="thead-dark">
+          <thead>
           <tr>
             <th>SI no</th>
             <th>First Name</th>

@@ -6,6 +6,7 @@ export default function College() {
     <div>
         <h2>College</h2>
         <p>This is the College Component</p>
+        <Outlet />
     </div>
 )
     ;

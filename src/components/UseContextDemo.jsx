@@ -3,7 +3,7 @@ import React, { useState, createContext, useContext } from "react";
 const UserContext = createContext();
 
 export default function UserContextDemo() {
-    const [user, setUser] = useState("Test user");
+    const [user, setUser] = useState("Hello user");
 
     return (
         <span >
